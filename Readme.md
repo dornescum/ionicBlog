@@ -1,4 +1,6 @@
 
+# ionicBlog
+
 # Check first
 global packages:
 `npm list -g --depth=0`
@@ -21,4 +23,10 @@ global packages:
 
 > ionic build && npx cap sync
 
-# ionicBlog
+
+
+> preferences
+
+> npm install @capacitor/network && npx cap sync 
+
+> npm install @capacitor/device && npx cap sync

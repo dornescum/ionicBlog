@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>utilities</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">utilities</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Connection type and info about your device</ion-label>
+      <ion-text>{{networkStatus?.connectionType}}</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>Device ID</ion-label>
+      <ion-text>{{deviceId?.identifier}}</ion-text>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Is Charging</ion-label>
+      <ion-text>{{batteryInfo?.isCharging}}</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>Battery Level</ion-label>
+      <ion-text>{{batteryInfo?.batteryLevel}}</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>Language Code</ion-label>
+      <ion-text>{{languageCode?.value}}</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>Is Virtual</ion-label>
+      <ion-text>{{deviceInfo?.isVirtual}}</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>Manufacturer</ion-label>
+      <ion-text>{{deviceInfo?.manufacturer}}</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>Model</ion-label>
+      <ion-text>{{deviceInfo?.model}}</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>Operating System</ion-label>
+      <ion-text>{{deviceInfo?.operatingSystem}}</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>Platform</ion-label>
+      <ion-text>{{deviceInfo?.platform}}</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>Web View Version</ion-label>
+      <ion-text>{{deviceInfo?.webViewVersion}}</ion-text>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
