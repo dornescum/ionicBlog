@@ -28,6 +28,10 @@ log.txt
 /tmp
 /out-tsc
 /bazel-out
+/android
+/ios
+android
+ios
 
 # Node
 /node_modules
@@ -66,3 +70,5 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+/src/environments/*

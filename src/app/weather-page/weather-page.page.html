@@ -1,5 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>weather-page</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,4 +13,21 @@
       <ion-title size="large">weather-page</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-item>
+    <ion-label position="floating" color="success"  style="margin: 1rem 0 3rem 0; font-size: 3rem"> Town</ion-label>
+    <ion-input [(ngModel)]="town" type="text"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="setTown()">Get value</ion-button>
+
+  <ion-card *ngIf="weather">
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Temperature</ion-label>
+        <ion-text >{{weather}}°C</ion-text>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>

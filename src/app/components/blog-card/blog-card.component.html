@@ -1,3 +1,8 @@
-<p>
-  blog-card works!
-</p>
+<ion-item [routerLink]="['/blog-details', blog.id]">
+  <ion-label>
+    <h2>{{ blog.title }}</h2>
+    <p>{{ blog.description }}</p>
+    <p>Date: {{ blog.date | date }}</p>
+    <p>Creator: {{ blog.creator }}</p>
+  </ion-label>
+</ion-item>
