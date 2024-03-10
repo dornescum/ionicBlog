@@ -1,10 +1,10 @@
 
 # ionicBlog
-![users ios image](/src/assets/usersIos.png);
-![weather](/src/assets/weatherIos.png);
-![users image](/src/assets/users.png);
-![device info](/src/assets/info.png);
-![blogs list](/src/assets/blog.png);
+![users ios image](/src/assets/usersIos.png)
+![weather](/src/assets/weatherIos.png)
+![users image](/src/assets/users.png)
+![device info](/src/assets/info.png)
+![blogs list](/src/assets/blog.png)
 
 # Capacitor Plugins Overview
 
