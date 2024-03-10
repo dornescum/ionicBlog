@@ -18,14 +18,17 @@
 <!--  COMENTAT PENTRU CA AM DOAR 50 DE REQUESTURI PE LUNA !! -->
 <!--  <div *ngIf="(weather$ | async) as weather">-->
 <!--    <ion-icon [name]="weather?.main.temp < 20 ? 'snow-outline' : 'sunny-outline'"></ion-icon>-->
-<!--    &lt;!&ndash;    asa vine din api. presupun ca este Celsius &ndash;&gt;-->
 <!--    <span>{{ weather?.main.temp }}°C</span>-->
 <!--  </div>-->
 <!--  ================-->
 
   <ion-searchbar [(ngModel)]="creatorFilter" (ionChange)="applyFilter()" placeholder="Filter by creator"></ion-searchbar>
 
-  <ion-list>
+  <ion-list *ngIf="filteredBlogs.length > 0; else noBlogsFound">
     <app-blog-card *ngFor="let blog of filteredBlogs" [blog]="blog"></app-blog-card>
   </ion-list>
+
+  <ng-template #noBlogsFound>
+    <div  class="ion-text-center ion-padding">No blogs found for the provided filter.</div>
+  </ng-template>
 </ion-content>

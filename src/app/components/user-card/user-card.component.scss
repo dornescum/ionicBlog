@@ -1,0 +1,21 @@
+.header-action {
+  display: flex;
+  align-items: center;
+}
+
+.custom-icon {
+  padding: 0 1rem 0 0;
+}
+
+
+.footer-btn {
+  color: var(--ion-color-medium-shade);
+
+  .footer-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .5rem 0 0;
+    color: var(--ion-color-medium-shade);
+  }
+}

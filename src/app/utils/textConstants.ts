@@ -8,6 +8,8 @@ export const textConstants = {
   utils :{
     errorLoading: 'Error loading data:',
     errorSettingTown: 'Error setting town:',
-    noDataAvailable: 'No data available'
+    noDataAvailable: 'No data available',
+    networkStatus: 'Network status:',
+    networkStatusChanged: 'Network status changed',
   }
 }

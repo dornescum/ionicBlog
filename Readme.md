@@ -1,6 +1,12 @@
 
 # ionicBlog
 
+![users image](/src/assets/users.png);
+![device info](/src/assets/info.png);
+![list of blogs](/src/assets/blog.png);
+![weather](/src/assets/weather.png);
+
+
 # Check first
 global packages:
 `npm list -g --depth=0`
