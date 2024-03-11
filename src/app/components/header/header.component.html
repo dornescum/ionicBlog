@@ -1,0 +1,12 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button defaultHref="/blogs"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="display: flex">
+      <img *ngIf="logoUrl" [src]="logoUrl" class="header-logo" alt="{{pageTitle}}"/>
+      {{ pageTitle }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>

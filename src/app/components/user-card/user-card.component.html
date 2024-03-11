@@ -1,28 +1,28 @@
-<ion-card>
+<ion-card [routerLink]="['/user-page', user.id]">
   <ion-card-header>
     <ion-card-title class="header-action">
       <ion-icon name="person" class="custom-icon"></ion-icon>
-      {{ user.name }}
+      {{ user?.name }}
     </ion-card-title>
     <ion-card-subtitle class="header-action">
       <ion-icon name="mail" class="custom-icon"></ion-icon>
-      {{ user.email }}
+      {{ user?.email }}
     </ion-card-subtitle>
   </ion-card-header>
 
   <ion-card-content>
     <p>
       <ion-icon name="map" class="custom-icon"></ion-icon>
-      {{ user.address.street }}, {{ user.address.suite }}, {{ user.address.city }}, {{ user.address.zipcode }}
+      {{ user.address?.street }}, {{ user.address?.suite }}, {{ user.address?.city }}, {{ user.address?.zipcode }}
     </p>
   </ion-card-content>
 
   <ion-button fill="clear" class="footer-btn">
     <ion-icon name="call" class="footer-action"></ion-icon>
-    {{ user.phone }}
+    {{ user?.phone }}
   </ion-button>
   <ion-button fill="clear" class="footer-btn">
     <ion-icon name="storefront" class="footer-action"></ion-icon>
-    {{ user.company.name }}
+    {{ user.company?.name }}
   </ion-button>
 </ion-card>

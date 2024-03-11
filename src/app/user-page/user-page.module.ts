@@ -4,10 +4,10 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { UsersPageRoutingModule } from './users-routing.module';
+import { UserPagePageRoutingModule } from './user-page-routing.module';
 
-import { UsersPage } from './users.page';
-import {UserCardComponent} from "../components/user-card/user-card.component";
+import { UserPagePage } from './user-page.page';
+import {UsersPageModule} from "../users/users.module";
 import {BlogDetailsPageModule} from "../blog-details/blog-details.module";
 
 @NgModule({
@@ -15,12 +15,10 @@ import {BlogDetailsPageModule} from "../blog-details/blog-details.module";
     CommonModule,
     FormsModule,
     IonicModule,
-    UsersPageRoutingModule,
+    UserPagePageRoutingModule,
+    UsersPageModule,
     BlogDetailsPageModule
   ],
-  exports: [
-    UserCardComponent
-  ],
-  declarations: [UsersPage, UserCardComponent]
+  declarations: [UserPagePage]
 })
-export class UsersPageModule {}
+export class UserPagePageModule {}
